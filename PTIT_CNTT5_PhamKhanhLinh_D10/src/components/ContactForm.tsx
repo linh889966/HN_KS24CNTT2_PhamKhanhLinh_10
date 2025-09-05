@@ -45,9 +45,7 @@ export default function ContactForm({ onSave, editing, onCancel }: Props) {
         onChange={(e) => setPhone(e.target.value)}
         style={{ padding: 6, marginRight: 10 }}
       />
-      <button onClick={handleSubmit}>
-        {editing ? "Cập nhật" : "Thêm"}
-      </button>
+      <button onClick={handleSubmit}>{editing ? "Cập nhật" : "Thêm"}</button>
       {editing && (
         <button onClick={onCancel} style={{ marginLeft: 10 }}>
           Hủy
